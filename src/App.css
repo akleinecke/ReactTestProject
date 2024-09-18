@@ -2,37 +2,29 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* This defines what our header looks like */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: blanchedalmond;
+  min-height: 10vh; /* So I THINK this is (by default) a percentage of the page that the 'thing' takes up */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(12px + 2vmin);
+  color: #857b72;
+}
+
+.App-body {
+  background-color: burlywood;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(8px + 2vmin);
+  color: hsl(0, 0%, 100%);
 }
 
 .App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: cadetblue;
 }

@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"> 
+    {/* We're defining 'className' so that when we import App.css we can grab our definitions.
+        This lets us customize what the different 'things' look like using .css! */}
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <text>
+          React.js
+        </text>
       </header>
+      <body className="App-body">
+        <text>
+          Hey. <br/> {/* <br/> creates a line break! */}
+          This is just a test page. <br/>
+          Cool, huh? :)
+        </text>
+      </body>
     </div>
   );
 }
 
-export default App;
+export default App; /* We have to export the app so that it works. */
