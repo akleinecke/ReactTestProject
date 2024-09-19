@@ -1,11 +1,13 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* This defines what our header looks like */
 .App-header {
   background-color: blanchedalmond;
-  min-height: 10vh; /* So I THINK this is (by default) a percentage of the page that the 'thing' takes up */
+  min-height: 10vh; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,10 +16,32 @@
   color: rgb(175, 144, 104);
 }
 
+.App-footer {
+  background-color: blanchedalmond;
+  min-height: 5vh; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(6px + 2vmin);
+  color: rgb(175, 144, 104);
+}
+
+.footer-item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.App-body-container {
+  display: flex;
+  flex: 1; /* Take up the remaining height below the header */
+}
+
 .App-body {
   background-color: rgb(175, 144, 104);
-  min-height: 90vh;
+  min-height: auto;
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -25,12 +49,21 @@
   color: hsl(0, 0%, 100%);
 }
 
+.App-side {
+  background-color: #83725d;
+  font-size: calc(6px + 2vmin);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .App-button {
   background-color: #9b7156;
   font-size: calc(4px + 2vmin);
   border-radius: 20px;
-  width: 8rem;
-  height: 3rem;
+  width: 8em;
+  height: auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
